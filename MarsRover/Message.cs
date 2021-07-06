@@ -6,14 +6,14 @@ namespace MarsRover
         public string Name { get; set; }
         public Command[] Commands { get; set; }
 
-        public Message(string name)
+/*        public Message(string name)
         {
             Name = name;
             if (String.IsNullOrEmpty(name))
             {
                 throw new ArgumentNullException(name, "Command type required.");
             }
-        }
+        }*/
 
         public Message(string name, Command[] commands)
         {
@@ -23,8 +23,6 @@ namespace MarsRover
                 throw new ArgumentNullException(name, "Command type required.");
             }
         }
-
-        
 
     }
 

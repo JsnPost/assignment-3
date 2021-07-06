@@ -8,8 +8,7 @@ namespace MarsRoverTests
     public class MessageTests
     {
         Command[] commands = { new Command("foo", 0), new Command("bar", 20) };
-
-        Message testName = new Message("Test Message");
+                    
 
         [TestMethod]
         public void ArgumentNullExceptionThrownIfNameNotPassedToConstructor()
@@ -28,19 +27,21 @@ namespace MarsRoverTests
 
         // verify that the message constructor properly populates the string Name
 
-        [TestMethod]
+/*        [TestMethod]
         public void ConstructorSetsName()
         {
-          Assert.AreEqual(testName.Name, "Test Message");
-        }
+            Message testName = new Message("Test Message");
+            Assert.AreEqual(testName.Name, "Test Message");
+        }*/
 
 
-        //verify that the commads array is properly filled
+        //verify that the name and commads array is properly filled
 
         [TestMethod]
         public void ConstructorSetsCommandsField()
         {
-
+            Message newTest = new Message("Test Message", commands);
+            Assert.AreEqual(newTest.Name, "Test Message");
         }
 
     }
