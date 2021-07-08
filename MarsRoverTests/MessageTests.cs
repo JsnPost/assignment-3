@@ -27,12 +27,12 @@ namespace MarsRoverTests
 
         // verify that the message constructor properly populates the string Name
 
-/*        [TestMethod]
+        [TestMethod]
         public void ConstructorSetsName()
         {
-            Message testName = new Message("Test Message");
+            Message testName = new Message("Test Message", commands);
             Assert.AreEqual(testName.Name, "Test Message");
-        }*/
+        }
 
 
         //verify that the name and commads array is set
