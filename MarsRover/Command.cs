@@ -26,7 +26,7 @@ namespace MarsRover
             {
                 throw new ArgumentNullException(commandType, "Command type required.");
             }
-            NewPosition = value;
+            this.NewPosition = value;
         }
 
         public Command(string commandType, string modeInput)
@@ -36,7 +36,7 @@ namespace MarsRover
             {
                 throw new ArgumentNullException(commandType, "Command type required.");
             }
-            NewMode = modeInput;
+            this.NewMode = modeInput;
 
         }
 

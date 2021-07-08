@@ -35,7 +35,7 @@ namespace MarsRoverTests
         }*/
 
 
-        //verify that the name and commads array is properly filled
+        //verify that the name and commads array is set
 
         [TestMethod]
         public void ConstructorSetsCommandsField()
