@@ -55,5 +55,17 @@ namespace MarsRoverTests
             Assert.AreEqual(newRover1.Position, 98382);
         }
 
+        [TestMethod]
+
+        public void PositionChangesFromMoveCommand()
+        {
+            Rover newRover1 = new Rover(98382);
+            Command[] commands1 = new Command[] { new Command("MOVE", 5000) };
+            Message newMessage1 = new Message("Test Message", commands1);
+
+            newRover1.ReceiveMessage(newMessage1);
+
+            Assert.AreEqual(newRover1.Position, 5000);
+        }
     }
 }
